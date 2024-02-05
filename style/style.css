@@ -1,3 +1,14 @@
+/* CUSTOM PROPS */
+:root {
+  --blue: rgb(82, 103, 223);
+  --red:  rgb(250, 89, 89);
+  --text-color: rgb(36, 42, 69) ;
+  --text-color-75: rgba(36, 42, 69,0.75) ;
+  --text-color-50: rgba(36, 42, 69,0.5) ;
+  --accent-grey: rgb(145, 148, 162);
+}
+
+
 /* GLOBAL STYLES*/
 html {
   box-sizing: border-box;
@@ -10,16 +21,18 @@ html {
   box-sizing: inherit;
 }
 body {
- display: flex;
- flex-direction: column;
- padding: 0%;
- margin: 0%;
- height: 100%;
- font-family: "Arial",sans-serif;
- font-size: 16px;
- line-height: 1.5;
- background-color: #fff;
- color: #222;
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+  margin: 0%;
+  height: 100%;
+  font-family: "Rubik","Arial",sans-serif;
+  color: var(--text-color-50);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+  background-color: #fff;
 }
 img {
   max-width: 100%;
@@ -28,14 +41,94 @@ img {
 
 /* CONTAINER */
 .container {
-width: 100%;
-max-width: 1200;
-margin-right: auto;
-margin-left: auto;
-padding-left: 50px;
-padding-right: 50px;
+  width: 100%;
+  max-width: 1144px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-content {
   flex-grow: 1;
+}
+
+/* BUTTON */
+.button {
+  padding: 10px 24px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+}
+.button-unique {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1.5px;
+  box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.2);
+  background-color: var(--accent-red);
+}
+.button-firefox {
+  font-weight: 600;
+  background: rgb(247, 247, 247);
+  color: var(--accent-black);
+}
+.button-chrome {
+  font-weight: 600;
+  background-color: rgb(82, 103, 223);
+  color: #fff;
+}
+/* FONTS */
+/* rubik-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/rubik-v28-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rubik-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/rubik-v28-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* rubik-500italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Rubik';
+  font-style: italic;
+  font-weight: 500;
+  src: url('../fonts/rubik-v28-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/poppins-v20-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
