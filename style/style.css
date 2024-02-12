@@ -242,12 +242,21 @@ img {
 /* FEATURE TAB PANEL */
 .feature-tab-pannel {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 .feature-tab-panel__img {
   margin-right: 30px;
   object-fit: contain;
+}
+.feature-tab-panel__img--bookmark-manager {
+   margin-right: 125px;
+}
+.feature-tab-panel__img--speedy-searching {
+   margin-right: 115px;
+}
+.feature-tab-panel__img--easy-sharing {
+   margin-right: 145px;
 }
 .feature-tab-panel__info {
   max-width: 445px;
